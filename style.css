@@ -198,12 +198,50 @@ a:hover {
 }
 
 /* Footer */
+/* Footer Styling */
 footer {
   text-align: center;
-  padding: 1rem;
-  background-color: black;
-  color: #C71585; /* Dark pink accent */
+  padding: 1.5rem;
+  background-color: #000000;
+  color: #ff1493;
+  position: relative;
+  margin-top: 2rem;
+  border-top: 2px solid rgba(199, 21, 133, 0.5);
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.8), 
+              0 5px 15px rgba(199, 21, 133, 0.3);
 }
+
+/* Social Icons Container */
+.social-icons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+/* Social Links */
+.social-link {
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Social Icon Images */
+.icon {
+  width: 40px;
+  height: 40px;
+  filter: brightness(0) invert(1); /* Makes icons white */
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover Effects for Links and Icons */
+.social-link:hover {
+  transform: translateY(-5px);
+}
+
+.social-link:hover .icon {
+  filter: brightness(1) saturate(1.5); /* Brighten icons on hover */
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
