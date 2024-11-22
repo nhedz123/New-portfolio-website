@@ -59,63 +59,24 @@ nav {
   cursor: pointer;
 }
 
-/* General div styling */
 div {
-  max-width: 90%; /* Adjust width for mobile devices */
-  margin: 1.5rem auto;
-  padding: 1.5rem;
+  max-width: 1000px;
+  margin: 2rem auto; /* Adds spacing around divs */
+  padding: 2rem; /* Internal spacing for content */
   text-align: center;
-  background-color: #000000;
-  border-radius: 20px;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6), 
-              0 -5px 10px rgba(199, 21, 133, 0.3);
-  border: 2px solid rgba(199, 21, 133, 0.5);
+  background-color: #000000; /* Base color */
+  border-radius: 20px; /* Smooth rounded corners */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6), /* Dark shadow */
+              0 -5px 10px rgba(199, 21, 133, 0.3); /* Subtle pink glow */
+  border: 2px solid rgba(199, 21, 133, 0.5); /* Dark pink border */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 div:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.8), 
-              0 -5px 15px rgba(199, 21, 133, 0.5);
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.8), /* Enhanced shadow on hover */
+              0 -5px 15px rgba(199, 21, 133, 0.5); /* Stronger pink glow */
 }
-
-/* Project Cards */
-.project-card {
-  margin: 1rem auto;
-  padding: 1.5rem;
-  background-color: #000000;
-  border-radius: 15px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5), 
-              0 -2px 5px rgba(199, 21, 133, 0.2);
-  border: 1px solid rgba(199, 21, 133, 0.5);
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  div {
-    max-width: 95%; /* Make div take most of the screen width */
-    padding: 1rem;
-  }
-
-  .project-card {
-    padding: 1rem;
-    font-size: 0.9rem; /* Adjust text size for smaller screens */
-  }
-
-  h2 {
-    font-size: 1.5rem; /* Smaller heading for mobile */
-  }
-
-  .tech-stack-list {
-    flex-direction: column; /* Stack tech stack items vertically */
-    gap: 1rem; /* Reduce spacing */
-  }
-
-  .tech-stack-list li {
-    width: 100%; /* Make items fill the available width */
-  }
-}
-
 
 /* About Section */
 .section {
