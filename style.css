@@ -1,4 +1,3 @@
-/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -7,16 +6,15 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: black; /* Base color */
-  color: #C71585; /* Dark pink accent */
+  background-color: black;
+  color: #C71585;
   line-height: 1.6;
   text-align: center;
 }
 
-/* Header */
 header {
-  background-color: black; /* Base color */
-  color: #C71585; /* Dark pink accent */
+  background-color: black;
+  color: #C71585;
   padding: 1rem 0;
   box-shadow: 0 2px 5px rgba(199, 21, 133, 0.2);
 }
@@ -31,7 +29,7 @@ nav {
 .logo {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #C71585; /* Dark pink accent */
+  color: #C71585;
 }
 
 .nav-links {
@@ -41,7 +39,7 @@ nav {
 }
 
 .nav-links a {
-  color: #C71585; /* Dark pink accent */
+  color: #C71585;
   text-decoration: none;
   font-size: 1rem;
 }
@@ -55,30 +53,27 @@ nav {
   background: none;
   border: none;
   font-size: 1.5rem;
-  color: #C71585; /* Dark pink accent */
+  color: #C71585;
   cursor: pointer;
 }
 
 div {
   max-width: 1000px;
-  margin: 2rem auto; /* Adds spacing around divs */
-  padding: 2rem; /* Internal spacing for content */
+  margin: 2rem auto;
+  padding: 2rem;
   text-align: center;
-  background-color: #000000; /* Base color */
-  border-radius: 20px; /* Smooth rounded corners */
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6), /* Dark shadow */
-              0 -5px 10px rgba(199, 21, 133, 0.3); /* Subtle pink glow */
-  border: 2px solid rgba(199, 21, 133, 0.5); /* Dark pink border */
+  background-color: #000000;
+  border-radius: 20px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.6), 0 -5px 10px rgba(199, 21, 133, 0.3);
+  border: 2px solid rgba(199, 21, 133, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 div:hover {
-  transform: translateY(-5px); /* Slight lift on hover */
-  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.8), /* Enhanced shadow on hover */
-              0 -5px 15px rgba(199, 21, 133, 0.5); /* Stronger pink glow */
+  transform: translateY(-5px);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.8), 0 -5px 15px rgba(199, 21, 133, 0.5);
 }
 
-/* About Section */
 .section {
   padding: 3rem 1rem;
   max-width: 1200px;
@@ -92,10 +87,9 @@ div:hover {
   object-fit: cover;
   margin: 0 auto 1rem;
   display: block;
-  border: 3px solid #C71585; /* Dark pink accent */
+  border: 3px solid #C71585;
 }
 
-/* Tech Stack Section */
 #tech-stack {
   padding: 3rem 1rem;
   max-width: 1200px;
@@ -106,7 +100,7 @@ div:hover {
 #tech-stack h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
-  color: #C71585; /* Dark pink accent */
+  color: #C71585;
 }
 
 .tech-stack-list {
@@ -128,7 +122,7 @@ div:hover {
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(199, 21, 133, 0.3);
-  width: 150px; /* Fixed width for consistency */
+  width: 150px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -146,16 +140,15 @@ div:hover {
 .tech-stack-list span {
   font-size: 1rem;
   font-weight: bold;
-  color: #C71585; /* Dark pink accent */
+  color: #C71585;
 }
 
 h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #C71585; /* Dark pink accent */
+  color: #C71585;
 }
 
-/* Skills Section */
 .skills-list {
   list-style: none;
   padding: 1rem 0;
@@ -164,18 +157,23 @@ h2 {
 .skills-list li {
   padding: 0.5rem 0;
   font-size: 1.1rem;
-  color: #C71585; /* Dark pink accent */
+  color: #C71585;
 }
 
-/* Projects Section */
 .projects-grid {
   display: grid;
   gap: 1.5rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .project-card {
-  border: 1px solid #C71585; /* Dark pink accent */
+  border: 1px solid #C71585;
   padding: 1.5rem;
   border-radius: 8px;
   background-color: black;
@@ -184,12 +182,11 @@ h2 {
 
 .project-card h3 {
   margin-bottom: 0.5rem;
-  color: #C71585; /* Dark pink accent */
+  color: #C71585;
 }
 
-/* Contact Section */
 a {
-  color: #C71585; /* Dark pink accent */
+  color: #C71585;
   text-decoration: none;
 }
 
@@ -197,8 +194,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Footer */
-/* Footer Styling */
 footer {
   text-align: center;
   padding: 1.5rem;
@@ -207,11 +202,9 @@ footer {
   position: relative;
   margin-top: 2rem;
   border-top: 2px solid rgba(199, 21, 133, 0.5);
-  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.8), 
-              0 5px 15px rgba(199, 21, 133, 0.3);
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.8), 0 5px 15px rgba(199, 21, 133, 0.3);
 }
 
-/* Social Icons Container */
 .social-icons {
   margin-top: 1rem;
   display: flex;
@@ -219,31 +212,26 @@ footer {
   gap: 1.5rem;
 }
 
-/* Social Links */
 .social-link {
   display: inline-block;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Social Icon Images */
 .icon {
   width: 40px;
   height: 40px;
-  filter: brightness(0) invert(1); /* Makes icons white */
+  filter: brightness(0) invert(1);
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-/* Hover Effects for Links and Icons */
 .social-link:hover {
   transform: translateY(-5px);
 }
 
 .social-link:hover .icon {
-  filter: brightness(1) saturate(1.5); /* Brighten icons on hover */
+  filter: brightness(1) saturate(1.5);
 }
 
-
-/* Responsive Design */
 @media (max-width: 768px) {
   .nav-links {
       display: none;
